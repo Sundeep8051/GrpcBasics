@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package GrpcTypes;
+
+option csharp_namespace = "Basics";
+
+service RpcServiceTypes {
+    rpc Unary(Request) returns (Response);
+    rpc ClientStreaming(stream Request) returns (Response);
+    rpc ServerStreaming(Request) returns (stream Response);
+    rpc BiDirectionalStreaming(stream Request) returns (stream Response);
+}
+
+message Request {
+  string content = 1;
+}
+
+message Response {
+  string message = 1;
+}

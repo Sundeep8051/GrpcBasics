@@ -1,0 +1,2 @@
+obj/Debug/net9.0/Protos/ServiceTypes.cs \
+obj/Debug/net9.0/Protos/ServiceTypesGrpc.cs: Protos/ServiceTypes.proto
